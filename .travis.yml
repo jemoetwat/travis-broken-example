@@ -3,8 +3,11 @@ php:
   - 5.5
   - 5.4
   - hhvm
-script: phpunit Test.php
-before_install:
+
+install:
   - pip install codecov
+  
+script: phpunit Test.php
+
 after_success:
   - codecov
